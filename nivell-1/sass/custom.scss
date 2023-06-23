@@ -2,11 +2,38 @@
 $primary: #fca311;
 $secondary: #14213d;
 $warning: #FB5859;
-$success: #B3B3B8;
+$success: #828285;
+$info: #5266DF;
 /*FINAL COLORES*/
 
 /*FUENTES*/
 $font-family-sans-serif: 'Open Sans', sans-serif;
 /*FINAL FUENTES*/
+
+/*Inicio nesting Nav Features*/
+.nav-link {
+    position: relative;
+    color: #000; /* Color del texto */
+    text-decoration: none !important;
+  }
+  
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: -2px; /* Ajusta la posición del subrayado */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor del subrayado */
+    background-color: $warning; /* Color del subrayado */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover:before {
+    transform: scaleX(1);
+  }
+
+  /*Final nesting nav features*/
+  
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
