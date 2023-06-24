@@ -60,6 +60,22 @@ sans-serif;
 
 /*FINAL CARDS*/
 
+/*ACCORDION*/
+
+@media (max-width: 767.98px) {
+  .accordion-width {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion-width {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
